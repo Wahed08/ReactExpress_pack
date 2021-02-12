@@ -1,0 +1,25 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "index": "nodemon index.js",
+    "weather": "cd weather & npm start",
+    "dev": "concurrently \"npm run index\" \"npm run weather\""
+  },
+  "author": "Wahed",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "create-react-app": "^4.0.2",
+    "express": "^4.17.1",
+    "jshint": "^2.12.0",
+    "nodemon": "^2.0.7",
+    "request": "^2.88.2"
+  },
+  "jshintConfig": {
+    "esversion": 6
+  }
+}
